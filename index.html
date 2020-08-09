@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="top">
+
+            <div class="main-info">
+                <div>
+                    <h3 class="city-name"></h3>
+                    <input type="text" placeholder="Enter city name"><button>Send</button>
+                    <p class="warning"></p>
+                </div>
+                <img src="" alt="Weather image" class="photo">
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="answers">
+                <div class="el">
+                    <p>Weather: </p>
+                    <p class="weather"></p>
+                </div>
+
+                <div class="el">
+                    <p>Humidity:</p>
+                    <p class="humidity"></p>
+                </div>
+                <div class="el">
+                    <p>pressure:</p>
+                    <p class="pressure"></p>
+                </div>
+            </div>
+            <div class="answers">
+
+                <div class="el">
+                    <p>Temperature:</p>
+                    <p class="temp"></p>
+                </div>
+                <div class="el">
+                    <p>Wind speed:</p>
+                    <p class="windSpeed"></p>
+                </div>
+                <div class="el">
+                    <p>Wind direction:</p>
+                    <p class="windDirection"><img src="Wind direction.svg"> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
