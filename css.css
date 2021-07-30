@@ -1,112 +1,128 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-
-}
-
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(255, 255, 255);
-    background-color: #333;
-    font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #333;
+  font-size: 20px;
 }
 
 input {
-    font-size: 16px;
-    padding: 5px 10px;
-    margin-top: 10px;
-    background: none;
-    border: none;
-    color: #fff;
-    border-bottom: 2px solid #ddd;
+  font-size: 16px;
+  padding: 5px 10px;
+  background: none;
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #ddd;
 }
 
 input::placeholder {
-    color: #ddd;
+  color: #ddd;
 }
 
 button {
-    padding: 10px;
-    margin-left: 20px;
-    color: #fff;
-    font-weight: bold;
-    background: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color .3s, color .3s;
+  padding: 10px;
+  margin-left: 20px;
+  color: #fff;
+  font-weight: bold;
+  background: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 button:hover {
-    color: black;
-    background-color: #ddd;
+  color: black;
+  background-color: #ddd;
 }
 
 .wrapper {
-    width: 800px;
-    border: 2px solid black;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  width: 800px;
+  border: 2px solid black;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .top {
-    height: 140px;
-}
-
-
-
-.main-info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .city-name {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .bottom {
-    display: flex;
+  display: flex;
 }
 
 .answers {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 30px;
-    padding-bottom: 20px;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
+  padding-bottom: 20px;
 }
 
 .el {
-    width: 100%;
-    display: flex;
-    margin: 10px;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
 }
 
 .el img {
-    color: white;
+  color: white;
 }
 
 .windDirection {
-    transition-duration: 1s;
+  transition-duration: 1s;
 }
 
 .photo {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 .warning {
-    margin-top: 10px;
-    font-size: 14px;
-    color: tomato;
+  margin-top: 10px;
+  font-size: 14px;
+  color: tomato;
+}
+
+@media (max-width: 650px) {
+  .top {
+    flex-direction: column;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .answers {
+    width: 70%;
+  }
+  .city-name {
+    text-align: center;
+  }
+  input {
+    width: 150px;
+  }
+}
+@media (max-width: 300px) {
+  input {
+    width: 100px;
+  }
 }
